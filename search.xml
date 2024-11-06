@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>我的主页</title>
+      <link href="/posts/6e4d2fce.html"/>
+      <url>/posts/6e4d2fce.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="东莞理工学院"><a href="#东莞理工学院" class="headerlink" title="东莞理工学院"></a>东莞理工学院</h1><p>东莞理工学院（Dongguan University of Technology）位于中国广东省东莞市，是一所以工为主，工、理、管、文、经、法等多学科协调发展的全日制普通本科高校。东莞理工学院成立于1990年，经过多年的发展，已经成为东莞市和广东省内较为重要的高等教育机构之一。</p><h3 id="校园与设施"><a href="#校园与设施" class="headerlink" title="校园与设施"></a>校园与设施</h3><p>东莞理工学院的校园环境优美，绿树成荫，拥有现代化的教学楼、实验室、图书馆和体育设施。学校致力于为学生提供良好的学习和生活环境，校园内配备了丰富的教学资源和娱乐设施。</p><h3 id="学科与专业"><a href="#学科与专业" class="headerlink" title="学科与专业"></a>学科与专业</h3><p>东莞理工学院设有多个学院，涵盖了工程、信息技术、商业管理、艺术设计、教育等多个学科领域。主要学科包括但不限于：</p><ul><li>机械工程</li><li>电气工程</li><li>计算机科学与技术</li><li>电子信息工程</li><li>商务管理</li><li>土木工程</li><li>艺术设计等</li></ul><h3 id="教学与科研"><a href="#教学与科研" class="headerlink" title="教学与科研"></a>教学与科研</h3><p>学校注重教学质量和科学研究，设有多个科研机构和实验室，积极开展应用研究，服务地方经济和社会发展。东莞理工学院的教师队伍中有不少具有博士学位和丰富实践经验的人员。</p><h3 id="国际交流"><a href="#国际交流" class="headerlink" title="国际交流"></a>国际交流</h3><p>东莞理工学院积极开展国际合作与交流，已与多所国外院校建立了合作关系，为学生提供了出国学习和交流的机会，提升学生的国际视野。</p><h3 id="学生生活"><a href="#学生生活" class="headerlink" title="学生生活"></a>学生生活</h3><p>学校注重学生的全面发展，提供丰富的课外活动，如社团、文体活动等，鼓励学生积极参与，锻炼综合素质。学校还为学生提供良好的住宿和饮食条件。</p><h3 id="校友与就业"><a href="#校友与就业" class="headerlink" title="校友与就业"></a>校友与就业</h3><p>东莞理工学院的毕业生在就业市场上受到用人单位的认可，学校与多家企业合作紧密，提供实习和就业机会，帮助学生顺利进入职场。</p><p>总之，东莞理工学院致力于培养具有创新精神和实践能力的人才，为地方经济和社会发展做出贡献。如果你对东莞理工学院有进一步的兴趣，建议访问学校的官方网站或联系相关部门获取更多信息。</p><p>def is_safe(board, row, col):  </p><p><code>\# 检查这一列是否有其他皇后</code>  </p><p>​    <code>for i in range(row):   ​        if board[i] == col or \</code><br>​           <code>board[i] - i == col - row or \</code><br>​           <code>board[i] + i == col + row:   ​            return False   ​    return True</code>  </p><p><code>def solve_n_queens_util(board, row, solutions):       if row == len(board):           solutions.append(board[:])  # 找到一种解法，复制当前棋盘状态           return</code>  </p><pre><code>for col in range(len(board)):      if is_safe(board, row, col):          board[row] = col  # 放置皇后          solve_n_queens_util(board, row + 1, solutions)          board[row] = -1  # 回溯，重置当前行  </code></pre><p><code>def solve_n_queens(n):       board = [-1] * n  # -1 表示当前行没有皇后       solutions = []       solve_n_queens_util(board, 0, solutions)       return solutions</code>  </p><p><code>n = 8   result = solve_n_queens(n)</code>  </p><p><code>for solution in result:       print(&quot;解法:&quot;)       for row in solution:           line = [&#39;.&#39;] * n           line[row] = &#39;Q&#39;           print(&quot;&quot;.join(line))       print()</code></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/posts/4a17b156.html"/>
+      <url>/posts/4a17b156.html</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
